@@ -7,10 +7,21 @@
   font-family: source-code-pro, monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: linear-gradient(-45deg, #f1d3ca, #ffc8dd, #87bbce, #7ccab8);
+  background: linear-gradient(
+    -45deg,
+    #f1d3ca,
+    #fddde9,
+    #87bbce,
+    #7ccab6,
+    rgb(166, 255, 255)
+  );
   background-size: 400% 400%;
-  animation: gradient 5s ease infinite;
+  animation: gradient 7s ease infinite;
   height: 100vh;
 }
 
@@ -130,13 +141,13 @@ section {
   font-family: source-code-pro, monospace;
   font-weight: 400;
   font-style: normal;
-  color: rgb(77, 77, 77);
+  color: black;
 }
 
 #separticle,
 #separticle2 {
   width: 80%;
-  background-color: rgb(58, 58, 77);
+  border-color: black;
 }
 
 .motivation {
@@ -150,9 +161,10 @@ section {
   margin-left: auto;
   margin-right: auto;
   font-style: italic;
-  /*   color: grey;
- */
   width: 90%;
+  background-color: rgba(128, 128, 128, 0.199);
+  border-radius: 2em;
+  padding: 2em;
 }
 
 .connect {
@@ -167,7 +179,7 @@ section {
 }
 
 .connect img {
-  width: 60%;
+  width: 40%;
   padding-top: 1em;
   animation-name: socialslessshadow;
   animation-duration: 1s;
