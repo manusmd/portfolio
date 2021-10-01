@@ -1,0 +1,223 @@
+@import url("https://use.typekit.net/els2uho.css");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  font-family: source-code-pro, monospace;
+}
+
+body {
+  background: linear-gradient(-45deg, #f1d3ca, #ffc8dd, #87bbce, #7ccab8);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.top-nav {
+  display: grid;
+  justify-self: right;
+  width: max-content;
+  text-align: end;
+  height: auto;
+  align-items: end;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: black;
+  padding: 1em;
+}
+
+.top-nav li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.top-nav a:hover {
+  animation-name: navani;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes navani {
+  100% {
+    color: white;
+    background-color: black;
+  }
+}
+
+.logo {
+  height: 4em;
+}
+
+section {
+  width: 80%;
+}
+
+.about {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.about:nth-child(2) {
+  order: 2;
+}
+
+.about img {
+  width: 80%;
+  height: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 100%;
+  order: 1;
+  animation-name: lessshadow;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes lessshadow {
+  from {
+    box-shadow: 1em 1em 4em black;
+  }
+  to {
+    box-shadow: 0.2em 0.2em 1em black;
+  }
+}
+
+.about img:hover {
+  animation-name: imgshadow;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes imgshadow {
+  from {
+    box-shadow: 0.2em 0.2em 1em black;
+  }
+  to {
+    box-shadow: 1em 1em 4em black;
+  }
+}
+
+.description.about {
+  justify-self: center;
+}
+
+.description h2 {
+  font-family: source-code-pro, monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(77, 77, 77);
+}
+
+#separticle,
+#separticle2 {
+  width: 80%;
+  background-color: rgb(58, 58, 77);
+}
+
+.motivation {
+  margin-left: auto;
+  margin-right: auto;
+  justify-self: center;
+  width: 80%;
+}
+
+.motivation p {
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+  /*   color: grey;
+ */
+  width: 90%;
+}
+
+.connect {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 4fr;
+
+  margin-left: auto;
+  margin-right: auto;
+  /*   justify-items: center;
+ */
+}
+
+.connect img {
+  width: 60%;
+  padding-top: 1em;
+  animation-name: socialslessshadow;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  border-radius: 100%;
+}
+
+@keyframes socialslessshadow {
+  from {
+    box-shadow: 1em 1em 4em black;
+    transform: scale(1.1);
+  }
+  to {
+    box-shadow: 0.2em 0.2em 1em black;
+    transform: scale(1);
+  }
+}
+
+.connect img:hover {
+  animation-name: socialsshadow;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes socialsshadow {
+  from {
+    box-shadow: 0.2em 0.2em 1em black;
+    transform: scale(1);
+  }
+  to {
+    box-shadow: 1em 1em 4em black;
+    transform: scale(1.1);
+  }
+}
+
+#linkedin {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+#xing {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+#github {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.socials {
+  text-align: center;
+}
