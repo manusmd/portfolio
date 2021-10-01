@@ -4,42 +4,60 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Manuel Portfolio</title>
   </head>
   <body>
-    <header>
-      <!-- Hier Logo einfügen -->
-      <img src="" alt="MS Logo" />
+    <header class="top">
+      <img class="logo" src="assets/MSLogo.svg" alt="MS Logo" />
       <nav class="top-nav">
         <ul>
-          <li class="crumb"><a href="#">ABOUT</a></li>
-          <li class="crumb"><a href="#">MOTIVATION</a></li>
-          <li class="crumb"><a href="#">CONNECT</a></li>
+          <li class="navem"><a href="#about">ABOUT</a></li>
+          <li class="navem"><a href="#motivation">MOTIVATION</a></li>
+          <li class="navem"><a href="#connect">CONNECT</a></li>
         </ul>
       </nav>
     </header>
+    <hr id="menuesep" />
     <main>
-      <section class="about">
-        <div class="img"></div>
-        <div class="description"></div>
+      <section id="about" class="about">
+        <div class="img"><img src="assets/profile.jpg" alt="profilbild" /></div>
+        <div class="description">
+          <h1>Manuel Schmid</h1>
+          <h2>Future Web Developer, tech geek, music enthusiast</h2>
+        </div>
       </section>
-      <!-- Trennlinie einfügen -->
-      <section class="motivation">
+      <hr id="separticle" />
+      <section id="motivation" class="motivation">
+        <h1>Motivation</h1>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora,
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora,
           pariatur. Ab doloremque totam tempora velit optio sit atque, eum ipsam
           ipsum ad molestiae repellat suscipit consectetur facere autem placeat
           fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eum
           quae tempora omnis quaerat fugiat dolores laborum laboriosam minus
           distinctio placeat voluptate consequatur beatae esse, exercitationem
-          dolore eius alias totam?
+          dolore eius alias totam?"
         </p>
       </section>
-      <!-- Trennlinie einfügen -->
-      <section class="connect">
-        <div class="linkedin"><img src="" alt="LinkedIn" /></div>
-        <div class="xing"><img src="" alt="XING" /></div>
-        <div class="linkedin"><img src="" alt="GitHub" /></div>
+      <hr id="separticle2" />
+      <section id="connect" class="connect">
+        <h1>Connect</h1>
+        <div id="linkedin" class="socials">
+          <a href="https://de.linkedin.com/in/manuelschmidrw"
+            ><img src="assets/linkedin.png" alt="LinkedIn"
+          /></a>
+        </div>
+        <div id="xing" class="socials">
+          <a href="https://www.xing.com/profile/Manuel_Schmid97"
+            ><img src="assets/xing-social-logotype.png" alt="XING"
+          /></a>
+        </div>
+        <div id="github" class="socials">
+          <a href="https://github.com/manusmd"
+            ><img src="assets/github.png" alt="GitHub"
+          /></a>
+        </div>
       </section>
     </main>
   </body>
