@@ -98,7 +98,7 @@ section {
 }
 
 .about img {
-  width: 80%;
+  width: 70%;
   height: auto;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -142,6 +142,47 @@ section {
   font-weight: 400;
   font-style: normal;
   color: black;
+}
+
+.word,
+.char {
+  animation-delay: var(--del);
+  animation-direction: var(--dir, normal);
+  animation-duration: var(--dur);
+  animation-iteration-count: var(--it, infinite);
+  animation-name: var(--name);
+  animation-timing-function: var(--tf);
+  animation-fill-mode: var(--fill, forwards);
+  display: inline-block;
+  position: relative;
+  transform-origin: 50% 100%;
+  z-index: 1;
+}
+
+.text {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(2%, -10%) rotate(-1deg);
+  }
+  50% {
+    transform: translate(-2%, 5%) rotate(3deg);
+  }
+
+  100% {
+    transform: translate(2%, -10%) rotate(-1deg);
+  }
+}
+
+.description p {
+  font-size: 5em;
+  margin-bottom: 0;
+}
+
+.description h2 {
+  width: 65%;
 }
 
 #separticle,
