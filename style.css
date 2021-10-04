@@ -15,16 +15,24 @@ body {
   background: linear-gradient(
     -45deg,
     #f1d3ca,
-    #fddde9,
+    #b7ffc3,
     #87bbce,
     #7ccab6,
     rgb(166, 255, 255)
   );
   background-size: 400% 400%;
-  animation: gradient 7s ease infinite;
+  animation: gradient 10s ease infinite;
   height: 100vh;
 }
 
+header {
+  top: 1em;
+  width: 100%;
+  border-radius: 1em;
+  position: fixed;
+}
+
+/* Background animation */
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -35,6 +43,10 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+
+#about {
+  margin-top: 5%;
 }
 
 .top {
@@ -51,6 +63,7 @@ body {
   text-align: end;
   height: auto;
   align-items: end;
+  position: fixed;
 }
 
 .top-nav a {
@@ -70,6 +83,7 @@ body {
   animation-fill-mode: forwards;
 }
 
+/* animate navigation items to appear white with black background */
 @keyframes navani {
   100% {
     color: white;
@@ -98,7 +112,7 @@ section {
 }
 
 .about img {
-  width: 70%;
+  width: 60%;
   height: auto;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -109,6 +123,7 @@ section {
   animation-fill-mode: forwards;
 }
 
+/* this animates the shadow when cursor is off the picture */
 @keyframes lessshadow {
   from {
     box-shadow: 1em 1em 4em black;
@@ -124,6 +139,7 @@ section {
   animation-fill-mode: forwards;
 }
 
+/* this animates the shadow when cursor is on the picture */
 @keyframes imgshadow {
   from {
     box-shadow: 0.2em 0.2em 1em black;
@@ -138,31 +154,15 @@ section {
 }
 
 .description h2 {
-  font-family: source-code-pro, monospace;
   font-weight: 400;
-  font-style: normal;
   color: black;
-}
-
-.word,
-.char {
-  animation-delay: var(--del);
-  animation-direction: var(--dir, normal);
-  animation-duration: var(--dur);
-  animation-iteration-count: var(--it, infinite);
-  animation-name: var(--name);
-  animation-timing-function: var(--tf);
-  animation-fill-mode: var(--fill, forwards);
-  display: inline-block;
-  position: relative;
-  transform-origin: 50% 100%;
-  z-index: 1;
 }
 
 .text {
   animation: float 3s ease-in-out infinite;
 }
 
+/* animates the floating "WHO" */
 @keyframes float {
   0% {
     transform: translate(2%, -10%) rotate(-1deg);
